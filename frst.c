@@ -2,41 +2,40 @@
 #include <string.h>
 
 int main (){
-    //variabel
-    int n;
-    scanf("%d", &n);
-    char arr[n][101];
-    char kata[100];
 
-    //intput array
-    for(int i=0; i<n;i++){
-        printf("masukan elemen array of string :\n");
-        scanf("%s", arr[i]);
+    char sample[201];
+    char dna[201];
 
-    }
+    //intput sample
+    
+    scanf("%s", sample);
+
 
     //intput kata
-    printf("masukan kata yang ingin di cari\n");
-    scanf("%s", kata);
+    scanf("%s", dna);
 
-    //penanda jika kata ditemukan dalam array of string
+    //tanda kalau ke temu
     int flag=0;
 
-    //pencarian string kata dalam array of string
-    for(int i=0;i<n;i++){
-        if(strcmp(arr[i], kata)== 0){
-            flag=1;
+    //pencarian dna nya
+    int i = 0;
+    while(i < strlen(sample) && flag == 0){
+        for(int h=0; i<strlen(sample); i++){
+            if(sample[h] == strlen(dna)){
+                flag= 1;
+            }
         }
+        i++;
     }
 
-    //jika kata tertentu dan tidak
+
+    //fungsi kalau ketemu dna nya / flag=1
     if(flag){
-        printf("kata %s di temukan dalam array of string.\n", kata);
-
+        printf("goodbye dio.. i will miss you bro\n");
     }else{
-        printf("kata %s TIDAK di temukan dalam array of string.\n", kata);
+        printf("alhamdulillah ternyata kamu selamat\n");
     }
-    
+
 
     return 0;
 
