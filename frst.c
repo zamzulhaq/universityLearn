@@ -20,8 +20,8 @@ int main (){
     //pencarian dna nya
     int i = 0;
     while(i < strlen(sample) && flag == 0){
-        for(int h=0; i<strlen(sample); i++){
-            if(sample[h] == strlen(dna)){
+        for(int h=0; h<strlen(dna); h++){
+            if(sample[i] == dna[h]){
                 flag= 1;
             }
         }
