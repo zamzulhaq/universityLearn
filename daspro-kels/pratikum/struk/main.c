@@ -1,4 +1,4 @@
-#include "sistem.h"
+#include "header.h"
 
 int main(){
     int n;

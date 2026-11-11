@@ -28,7 +28,7 @@ int main(){
     int batasDat=0;
     int i=0;
     while(i<n && batasDat < bInpt){
-        if((intputObat[i].stok >= x) && (intputObat[i].stok <= z)){
+        if((intputObat[i].stok >= x) && (intputObat[i]=l.stok <= z)){
             printf("obat yag sesuai:\n %s %s %lf\n", intputObat[i].namaObat, intputObat[i].kategori, intputObat[i].stok);
             
             batasDat++;
